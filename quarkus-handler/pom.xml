@@ -4,12 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.cifertech.exceptionhandler</groupId>
+        <groupId>io.github.yacson3287</groupId>
         <artifactId>ExceptionHandlerCT</artifactId>
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>quarkus-handler</artifactId>
+    <artifactId>quarkus-exceptions-handler</artifactId>
+    <name>ExceptionHandlerCT - Quarkus Handler</name>
+    <description>Quarkus integration and handler module for ExceptionHandlerCT.</description>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -20,8 +22,8 @@
     <dependencies>
         <!-- Módulo Core con las excepciones -->
         <dependency>
-            <groupId>com.cifertech.exceptionhandler</groupId>
-            <artifactId>core</artifactId>
+            <groupId>io.github.yacson3287</groupId>
+            <artifactId>core-exceptions</artifactId>
             <version>${project.version}</version>
         </dependency>
 

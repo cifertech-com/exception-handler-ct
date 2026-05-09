@@ -32,8 +32,8 @@ Add the `quarkus-handler` module to your dependencies (the `core` module will be
 
 ```xml
 <dependency>
-    <groupId>com.cifertech.exceptionhandler</groupId>
-    <artifactId>quarkus-handler</artifactId>
+    <groupId>io.github.yacson3287</groupId>
+    <artifactId>quarkus-exceptions-handler</artifactId>
     <version>1.0.0</version>
 </dependency>
 ```
