@@ -13,6 +13,35 @@
         <module>quarkus-handler</module>
     </modules>
 
+    <!-- Metadata para Maven Central -->
+    <name>ExceptionHandlerCT</name>
+    <description>A modular, lightweight, and highly standardized global exception-handling library designed specifically for Java 21 and Quarkus applications.</description>
+    <url>https://github.com/cifertech-com/exception-handler-ct</url>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>yacson</id>
+            <name>Yacson Ramirez</name>
+            <email>yacson.ramirez@gmail.com</email>
+            <organization>CiferTech</organization>
+            <organizationUrl>https://github.com/cifertech-com</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/cifertech-com/exception-handler-ct.git</connection>
+        <developerConnection>scm:git:ssh://github.com:cifertech-com/exception-handler-ct.git</developerConnection>
+        <url>https://github.com/cifertech-com/exception-handler-ct</url>
+    </scm>
+
     <properties>
         <revision>1.0.0</revision>
         <maven.compiler.source>21</maven.compiler.source>
