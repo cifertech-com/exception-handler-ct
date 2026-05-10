@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.github.yacson3287</groupId>
         <artifactId>ExceptionHandlerCT</artifactId>
-        <version>1.0.0</version>
+        <version>${revision}</version>
     </parent>
 
     <artifactId>quarkus-exceptions-handler</artifactId>
