@@ -7,16 +7,16 @@ By utilizing this library, you avoid repetitive try-catch blocks and manual HTTP
 ## 📦 Features
 - **Standardized JSON Responses**: Consistent error formatting across all your Quarkus microservices.
 - **Pre-built HTTP Exceptions**: Includes a comprehensive suite of 4xx and 5xx exceptions out-of-the-box (e.g., `BadRequest`, `Conflict`, `NotFound`, `InternalServerError`).
-- **Jandex Indexed**: The `quarkus-handler` module is pre-indexed with Jandex, meaning Quarkus automatically discovers the `@Provider` without additional configuration.
-- **Modular Design**: Split into a `core` module (pure Java exceptions) and a `quarkus-handler` module (Quarkus/Jakarta REST specific mappers).
+- **Jandex Indexed**: The `quarkus-exceptions-handler` module is pre-indexed with Jandex, meaning Quarkus automatically discovers the `@Provider` without additional configuration.
+- **Modular Design**: Split into a `core-exceptions` module (pure Java exceptions) and a `quarkus-exceptions-handler` module (Quarkus/Jakarta REST specific mappers).
 
 ---
 
-## 🚀 Installation (Local Development)
+## 🚀 Installation
 
-Currently, the library is meant to be installed in your local Maven repository (`~/.m2/repository`). 
+The library is published to **Maven Central**, so you can easily include it directly in your projects. 
 
-To install it locally, clone or download this repository, open a terminal in the root directory, and run:
+If you still wish to build it locally for development or contribution, clone the repository and run:
 
 ```bash
 mvn clean install -DskipTests
@@ -26,15 +26,15 @@ mvn clean install -DskipTests
 
 ## 🛠️ How to Import into a Quarkus Project
 
-Once the library is installed locally, you can easily integrate it into any Quarkus microservice by adding a single dependency to your target project's `pom.xml`.
+Once the library is available, you can easily integrate it into any Quarkus microservice by adding a single dependency to your target project's `pom.xml`.
 
-Add the `quarkus-handler` module to your dependencies (the `core` module will be imported automatically as a transitive dependency):
+Add the `quarkus-exceptions-handler` module to your dependencies (the `core-exceptions` module will be imported automatically as a transitive dependency):
 
 ```xml
 <dependency>
     <groupId>io.github.yacson3287</groupId>
     <artifactId>quarkus-exceptions-handler</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.4</version>
 </dependency>
 ```
 
@@ -127,3 +127,9 @@ The library contains a class annotated with `@Provider` and `ExceptionMapper<Api
 When your application throws any exception that inherits from `ApiException` (which all the `_4xx` and `_5xx` classes do), the Quarkus REST (RESTEasy) engine intercepts it before it reaches the client.
 
 The `ExceptionGlobalHandler` then extracts the HTTP status code, the error message, and the timestamp from the thrown exception, wrapping them into a standardized JSON payload and returning it to the client with the correct HTTP headers.
+
+---
+
+## 📄 License
+
+This project is licensed under the **Apache License 2.0**. You can find the license header in all source files.
