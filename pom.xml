@@ -11,7 +11,7 @@
     
     <modules>
         <module>core-exceptions</module>
-        <module>quarkus-handler</module>
+        <module>quarkus-handler-exceptions</module>
     </modules>
 
     <name>ExceptionHandlerCT</name>
