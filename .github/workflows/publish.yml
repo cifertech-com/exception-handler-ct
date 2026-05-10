@@ -23,6 +23,9 @@ jobs:
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
           gpg-passphrase: GPG_PASSPHRASE
 
+      - name: Formatear Licencias
+        run: mvn license:format
+
       - name: Publicar en Maven Central
         run: mvn clean deploy -P release
         env:
