@@ -9,7 +9,7 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>quarkus-handler-exceptions</artifactId>
+    <artifactId>quarkus-exceptions-handler</artifactId>
     <name>ExceptionHandlerCT - Quarkus Handler Exception</name>
     <description>Quarkus integration and handler module for ExceptionHandlerCT.</description>
 
