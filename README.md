@@ -1,6 +1,6 @@
 # ExceptionHandlerCT
 
-ExceptionHandlerCT is a modular, lightweight, and highly standardized global exception-handling library designed specifically for **Java 21** and **Quarkus** applications. 
+ExceptionHandlerCT is a modular, lightweight, and highly standardized global exception-handling library designed specifically for **Java 25** and **Quarkus 3.40.1.1 LTS** applications. 
 
 By utilizing this library, you avoid repetitive try-catch blocks and manual HTTP response formatting across your microservices. Instead, you can simply throw a domain-specific exception (e.g., `NotFound`, `BadRequest`), and the library will automatically intercept it and return a standardized, clean JSON error response to the client.
 
@@ -34,11 +34,11 @@ Add the `quarkus-exceptions-handler` module to your dependencies (the `core-exce
 <dependency>
     <groupId>io.github.yacson3287</groupId>
     <artifactId>quarkus-exceptions-handler</artifactId>
-    <version>1.0.4</version>
+    <version>2.0.0</version>
 </dependency>
 ```
 
-*(Note: Ensure your target project is using Java 21, as this library is compiled with `maven.compiler.release` set to 21).*
+*(Note: Ensure your target project is using Java 25, as this library is compiled with `maven.compiler.release` set to 25).*
 
 ---
 

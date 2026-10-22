@@ -1,6 +1,6 @@
 # Módulo: quarkus-exceptions-handler
 
-El módulo [`quarkus-exceptions-handler`](file:///home/yacson/Proyectos/cifertech/ExcepptionHandlerCT/ExceptionHandlerCT/quarkus-exceptions-handler) es la capa de integración para aplicaciones **Quarkus** y estándares **Jakarta REST**. Transforma automáticamente excepciones de dominio y validaciones en respuestas HTTP con formato JSON estandarizado.
+El módulo [`quarkus-exceptions-handler`](file:///home/yacson/Proyectos/cifertech/ExcepptionHandlerCT/ExceptionHandlerCT/quarkus-exceptions-handler) es la capa de integración para aplicaciones **Quarkus 3.40.1.1 LTS** (Java 25) y estándares **Jakarta REST**. Transforma automáticamente excepciones de dominio y validaciones en respuestas HTTP con formato JSON estandarizado.
 
 ---
 
@@ -124,7 +124,7 @@ Para utilizar este manejador global en cualquier microservicio, basta con agrega
 <dependency>
     <groupId>io.github.yacson3287</groupId>
     <artifactId>quarkus-exceptions-handler</artifactId>
-    <version>1.0.4</version>
+    <version>2.0.0</version>
 </dependency>
 ```
 

@@ -12,10 +12,10 @@ jobs:
       - name: Checkout del código
         uses: actions/checkout@v4
 
-      - name: Configurar Java 21 y credenciales
+      - name: Configurar Java 25 y credenciales
         uses: actions/setup-java@v4
         with:
-          java-version: '21'
+          java-version: '25'
           distribution: 'temurin'
           server-id: central
           server-username: MAVEN_USERNAME
