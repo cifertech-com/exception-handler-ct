@@ -6,7 +6,7 @@ El módulo [`core-exceptions`](file:///home/yacson/Proyectos/cifertech/Excepptio
 
 ## 🎯 Principio de Diseño
 
-- **Agnóstico de Frameworks:** No depende de Quarkus, Spring, Jakarta REST ni de ninguna biblioteca externa. Es **Java 21 estándar y puro**.
+- **Agnóstico de Frameworks:** No depende de Quarkus, Spring, Jakarta REST ni de ninguna biblioteca externa. Es **Java 25 estándar y puro**.
 - **Inmutabilidad y Flexibilidad:** Todas las excepciones heredan de `ApiException`, la cual encapsula el código HTTP (`HttpCode`) y una carga útil estructurada (`detail`).
 - **Seguridad en Serialización:** Los atributos `httpCode` y `detail` están marcados como `transient` para evitar fugas de estado no deseadas en contextos de serialización estándar.
 

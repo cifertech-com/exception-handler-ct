@@ -1,6 +1,6 @@
 # Arquitectura Modular de ExceptionHandlerCT
 
-`ExceptionHandlerCT` es una solución diseñada para estandarizar el manejo de errores en microservicios basados en **Java 21** y **Quarkus**. El proyecto adopta una arquitectura modular desacoplada mediante Maven Multi-Module, separando la definición de dominios de error de la capa de integración con el framework.
+`ExceptionHandlerCT` es una solución diseñada para estandarizar el manejo de errores en microservicios basados en **Java 25** y **Quarkus 3.40.1.1 LTS**. El proyecto adopta una arquitectura modular desacoplada mediante Maven Multi-Module, separando la definición de dominios de error de la capa de integración con el framework.
 
 ---
 
@@ -32,7 +32,7 @@ flowchart TD
 
 | Módulo | Documentación Detallada | Responsabilidad Principal | Dependencias Externas |
 |---|---|---|---|
-| [`core-exceptions`](file:///home/yacson/Proyectos/cifertech/ExcepptionHandlerCT/ExceptionHandlerCT/.agents/modules/core-exceptions.md) | [Ver core-exceptions.md](file:///home/yacson/Proyectos/cifertech/ExcepptionHandlerCT/ExceptionHandlerCT/.agents/modules/core-exceptions.md) | Catálogo de excepciones HTTP (4xx y 5xx), códigos de estado y excepciones base. | **Ninguna** (Java 21 Puro) |
+| [`core-exceptions`](file:///home/yacson/Proyectos/cifertech/ExcepptionHandlerCT/ExceptionHandlerCT/.agents/modules/core-exceptions.md) | [Ver core-exceptions.md](file:///home/yacson/Proyectos/cifertech/ExcepptionHandlerCT/ExceptionHandlerCT/.agents/modules/core-exceptions.md) | Catálogo de excepciones HTTP (4xx y 5xx), códigos de estado y excepciones base. | **Ninguna** (Java 25 Puro) |
 | [`quarkus-exceptions-handler`](file:///home/yacson/Proyectos/cifertech/ExcepptionHandlerCT/ExceptionHandlerCT/.agents/modules/quarkus-exceptions-handler.md) | [Ver quarkus-exceptions-handler.md](file:///home/yacson/Proyectos/cifertech/ExcepptionHandlerCT/ExceptionHandlerCT/.agents/modules/quarkus-exceptions-handler.md) | Interceptores `@Provider` (`ExceptionMapper`), indexación Jandex y serialización JSON. | Jakarta REST, Jakarta Validation, MicroProfile Config |
 
 ---
